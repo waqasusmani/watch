@@ -11,4 +11,4 @@ setInterval(()=>{
     ticks+=1
     ticksCounter.innerText = "Ticks: "+ticks
     console.log("Rotation Degree: " + rotationDegree)
-},1000)
+},100)
