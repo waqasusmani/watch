@@ -7,11 +7,23 @@
     <title>Watch</title>
 </head>
 <body>
+    <button id="start-stop-button" onclick="timerStartStop()"></button>
     <div class="container">
         <div id="hand" class="hand">
 
         </div>
         <div id="ticks" class="ticks"></div>
+        <div id="countdown-div">
+            <span id="countdown-one" class="countdown-numbers">
+                1
+            </span>
+            <span id="countdown-two" class="countdown-numbers">
+                2
+            </span>
+            <span id="countdown-three" class="countdown-numbers">
+                3
+            </span>
+        </div>
     </div>
     <audio id="tick-sound" src="./assets/clock sound.mp3"></audio>
     <script src="app.js"></script>

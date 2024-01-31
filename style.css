@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     height: 80vh;
     aspect-ratio: 1;
     background-color: burlywood;
@@ -32,4 +33,42 @@
     margin: 25% auto 0 auto;
     background-color: aliceblue;
     text-align: center;
+}
+
+#countdown-div {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    top: 45%;
+    left: 45%;
+    background-color: aqua;
+    z-index: 111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-numbers {
+    font-size: 0rem;
+    transform-origin: 50% 50% 0;
+}
+
+.countdown-animator-class {
+    animation-name: countdown-numbers-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes countdown-numbers-animation {
+    0%  {
+        font-size: 0rem;
+    }
+
+    50% {
+        font-size: 5rem;
+    }
+
+    100% {
+        font-size: 0rem;
+    }
 }
